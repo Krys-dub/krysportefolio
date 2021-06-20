@@ -1,0 +1,375 @@
+body
+{
+    width:auto;
+    height:auto;
+    display: block;
+    margin-top: 0;
+}
+
+/* A suivre "header" de l'index */
+h1
+{
+    font-family: 'Times New Roman', 'Calibri', 'Arial' ;
+    font-size: 1,2em;
+    color: rgb(14,43,96);
+    background-color: rgb(255,255,255, 0.5);
+    font-weight: bold;
+    text-align: center;
+}
+h2
+{
+    font-family: 'Times New Roman', 'Calibri', 'Arial' ;
+    font-size: 1.3em;
+    color: rgb(14,43,96);
+    font-weight: bold; 
+    
+}
+h3
+{
+    font-family: 'Times New Roman', 'Calibri', 'Arial' ;
+    font-size: 1em;
+    color: rgb(14,43,96);
+    font-weight: bold; 
+    
+    text-align:center;
+}
+h4
+{
+    font-family: 'Times New Roman', 'Calibri', 'Arial' ;
+    font-size: 1em;
+    color: rgb(14,43,96);
+    font-weight: bold; 
+    margin-left: 2%;
+    text-align: left;
+}
+header
+{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height:130px;
+    margin:auto;
+    border: 3px solid black;
+    background-image:url(images/map_monde.jpg);
+  
+}
+section p
+{
+    font-family: 'Times New Roman', 'Calibri', 'Arial' ;
+    font-size: auto;
+    color: black;
+}
+.menu_top
+{
+  
+    width: auto;
+    height: 30px;
+    background-color: rgb(0,0,0, 0.4); 
+    text-align: left;
+    position: relative;
+    bottom: -17px;
+  
+}
+.menu_top li
+{
+  
+    list-style: none;
+    display: inline;
+    margin-right: 8%;
+    position: relative;
+    bottom: 8px;
+   
+}
+.menu_top a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    font-weight:bold;    
+}
+
+@media all and (max-width: 540px)
+{
+    header
+    {
+        background-repeat: no-repeat;
+    }
+    h1
+    {
+        font-size: 0.9em;
+       
+    }
+    h2, h3
+    {
+        font-size: 0.9em;
+    }
+    .menu_top
+    {
+        display: flex;
+        width: auto;
+        height:40px;
+        text-align: left;
+        background-color: rgb(0,0,0, 0.7);
+    }
+    .menu_top ul
+    {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .menu_top li
+    {
+        padding-left: 5px;
+    }
+    .menu_top a
+    {
+        font-size: 0.7em;
+    }
+    .lien_page
+    {
+        font-size: auto;
+    }
+    
+}
+/* A suivre "article" de l'index*/
+.lien_page 
+{
+    font-size: 1em;
+    color: rgb(14,43,96);
+    font-style: oblique;
+    text-decoration: none;
+    float: right;
+    padding-right: 5px;
+}
+.presentation
+{
+    margin-left:3%;
+}
+.citation_accueil
+{
+   font-family:'Calibri', 'Arial','Times New Roman' ;
+    font-size: 0.9em;
+    color: gray;
+    font-style: oblique;
+    text-align:center;
+}
+.mini_tasse
+{
+    float:right;
+    width: 17%;
+    margin: 1%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.intro
+{
+    text-align: justify; 
+}
+.retour_haut
+{
+  
+    float: right;
+    width: 8%;
+ 
+}
+@media all and (max-width: 540px)
+{
+    h2
+    {
+        font-size: auto;
+    }
+    .mini_tasse
+    {
+        display: none;
+    }
+    .lien_page
+    {
+        font-size: auto;
+    }
+    
+}
+/* A suivre "aside" de l'index */
+aside
+{
+    margin-left:3%;
+}
+#photo_click
+{
+    width: 60%;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    left: 20%;
+   
+ 
+    margin: auto;  
+    margin-bottom: 2%;
+}
+.photo_click_format 
+{
+    
+    box-shadow: 6px 6px 4px rgb(14,43,96);
+     width:auto;
+    height: 120px;
+    border-radius: 10px; 
+    margin-right: 1%;
+}
+@media all and (max-width: 540px)
+{
+    .photo_click_format
+    {
+        width:30%;
+        height: 40px;
+        
+    }
+}
+/* A suivre "footer" de l'index*/
+footer
+{
+   
+    background-color: rgb(249,247,247);
+    border-top: 1px solid rgb(183,181,181);
+    padding-bottom: 15px;
+}
+#super_footer
+{ 
+    width:auto;
+    display: flex;
+  justify-content:space-around;
+    margin:auto;
+     
+}
+.menu_footer
+{   
+    display: flex;
+    width: 30%;
+  
+}
+.menu_footer a
+{
+    text-decoration: none;
+    font-family: 'Calibri', 'Arial','Times New Roman' ;
+    color: rgb(54,52,52);
+    font-size: 0.7em;
+}
+.menu_footer li
+{
+    list-style: none;
+}
+#social
+{
+    display: inline;
+    text-align: center;  
+    width: 40%;
+}
+footer .suivez_nous_social
+{
+   
+    text-align: center;
+    font-family: 'Times New Roman', 'Calibri', 'Arial' ;
+    font-size: 1em;
+    color: rgb(14,43,96);
+    font-weight: bold;
+    margin-top:-3%;
+   
+}
+
+.social_format
+{
+  
+}
+.extra
+{   
+    display: flex;
+    width:30%;
+}
+.extra a 
+{
+    text-decoration: none;
+    font-family: 'Calibri', 'Arial','Times New Roman' ;
+    color: rgb(54,52,52);
+    font-size: 0.7em;
+}
+.extra li
+{
+    list-style:none;
+}
+@media all and (max-width: 540px)
+{   
+    #super_footer
+    {
+        width: auto;
+        margin:auto;
+    }
+    .social_format
+    {
+        width: 30%;
+        margin:auto;
+        padding-bottom: 3px;
+        display: block;
+    }
+    footer .suivez_nous_social
+    {
+        font-size: 0.8em;
+        margin-top: 2px;
+    }
+    .menu_footer
+    {
+        width: 35%;
+    }
+    .extra
+    {
+        width: 35%;
+    }
+    .extra a
+    {
+        text-align: justify;
+    }
+
+}
+
+/* ci-dessous "page inscription/connexion */
+
+#inscription_connexion
+{
+    width:100%;
+    display: flex;
+    justify-content:space-around;
+    margin:auto;
+    padding-bottom: 15px;
+    font-family: 'Times New Roman', 'Calibri', 'Arial' ;
+    font-size: 1em;
+    color: black;
+  
+ 
+}
+#inscription
+{
+    border-right: 1px solid rgb(14,43,96);
+    width: 50%;
+    text-align: right;
+    padding-right: 30px;
+  
+   
+   
+}
+#connexion
+{
+    width: 50%;
+      padding-left: 10px;
+   
+   
+}
+#inscription h4
+{
+
+    text-align: right;
+}
+#inscription p
+{
+    font-size: 0.7em;
+    color: rgb (183, 181,181);
+}
+
+
+
